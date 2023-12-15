@@ -1,0 +1,23 @@
+body{
+    margin:10;
+    background-color: beige;
+    font-size:23px;
+    line-height:30px;
+    text-align: center;
+}
+header{
+    text-align:center;
+    background-color: #333;
+    color: beige;
+    padding: 1em;
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}

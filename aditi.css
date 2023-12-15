@@ -1,0 +1,172 @@
+nav,header,footer{
+    display:block;
+}
+body{
+    line-height:1;
+    margin:0;
+    background-image: url('/html/bg.jpg');
+
+    background-size:1280px;
+    
+    
+    
+    
+}
+
+.container{
+    width:100%;
+    margin:auto;
+    padding-top:4%;
+    padding-bottom:4%;
+    padding-left: 10%;
+    
+}
+
+.row{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+}
+.row::after{
+    display:table;
+    clear:both;
+
+}
+.col-1{width:8.33;}
+.col-2{width:16.66%;}
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6{width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.66%;}
+.col-9{width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%;}
+
+
+
+/**NAV BAR*/
+nav{
+    width:100%;
+    margin:0;
+    position: fixed;
+    width: 100%;
+    padding: 0px;
+    z-index: 100;
+}
+nav ul{
+    background-color: beige ;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+}
+
+ul.topnav li{
+    list-style: none;
+    float:left;
+    font-size:20px;
+}
+
+ul.topnav li.topnavr{
+    float:right;
+}
+
+ul.topnav li a{
+    display:block;
+    text-decoration: none;
+    min-height:16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    text-decoration-color: aquamarine;
+}
+
+ul.topnav li a:hover{
+    background-color: blueviolet;
+    color:blanchedalmond;
+}
+
+ul.topnav li.dropdownIcon{
+    display:none;
+}
+
+
+
+
+    
+    
+
+
+
+h1.large{
+    color:blueviolet;
+    font-size:56px;
+    margin:0;
+    line-height: 70px;
+}
+h2.large{
+    color:blueviolet;
+}
+input[type="text"]{
+    min-width:100px;
+}
+footer.footsy{
+    background-color:beige;
+    margin-top: auto;
+    padding: 0px;
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    
+}
+footer.footsy h1{
+    color:plum;
+    min-height: 16px;
+    padding-left: 10%;
+    font-size:25px;
+    
+    
+}
+.col-3 a{
+    text-decoration: none;
+}
+.col-3 a:hover{
+    background-color: blueviolet;
+    color:blanchedalmond;
+    
+    
+    
+    
+}
+    
+
+/*MOBILE*/
+@media screen and (max-width: 680px){
+    ul.topnav li:not(:nth-child(1)){
+        display:none;}
+    ul.topnav li.dropdownIcon{
+        display:block;
+        float:right;
+    }
+    ul.topnav.responsive li.dropdownIcon{
+        position:absolute;
+        top:0;
+        right:0;
+    }
+    ul.topnav.responsive{
+        position:relative;
+    }
+    ul.topnav.responsive li{
+        display:inline;
+        float:none;
+    }
+    ul.topnav.responsive li a { 
+        display: block;
+        text-align: left;
+    }
+}
